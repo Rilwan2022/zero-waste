@@ -1,0 +1,104 @@
+.body1{
+    margin: 0;
+    padding: 0;
+}
+.body1:before{
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/images/cans-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
+.contactForm
+{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    width: 500px;
+    height: 950px;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.6);
+}
+
+.contactForm h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contactForm .paraLabel
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.contactForm p
+{
+    margin: 8px;
+    padding: 0;
+    /* font-weight: bold; */
+    color:white;
+}
+
+.contactForm input
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm input[type="email"],
+.contactForm input[type="text"],
+.contactForm input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.contactForm input[type="submit"] {
+    height: 30px;
+    color: #fff;
+    font-size: 15px;
+    background: red;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+}
+.contactForm a
+{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .contactForm{
+        margin-top: 20px;
+        transform: translate(-50%,-47%);
+        width: 500px;
+        height: 850px;
+        padding: 80px 40px;
+        box-sizing: border-box;
+        background: rgba(0,0,0,.6);
+        width: 100%;
+    }
+}
